@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com");
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: cursive;
+    scroll-behavior: smooth;
+    /* background-color: #2b1055; */
+    color: white;
+}
+
+body {
+    height: 225vh;
+    width: 100%;
+    background: linear-gradient(#2b1055, #7595de);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+
+#main {
+    margin: 10px 10px;
+    padding: 50px 5px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    /* overflow: hidden; */
+}
+
+#top {
+    margin: 20px 30px;
+    top: 10;
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#head1 {
+    /* display: flex; */
+    margin: 12px 10px;
+    font-size: 60px;
+    font-weight: 900;
+    /* font-family: cursive; */
+    /* text-shadow: 2px 2px 2px white; */
+    
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Mochiy Pop One', sans-serif; */
+    /* font-family: 'Courier New', Courier, monospace */
+    font-family: system-ui;
+    /* font-family: 'Rubik Moonrocks', cursive; */
+    color: transparent;
+    position: relative;
+    -webkit-text-stroke:0.13vw black ;
+    /* text-transform: uppercase; */
+}
+
+#head1::before{
+    content: attr(data-text);
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    width: 0%;
+    /* height: 100%; */
+    color: white;
+    -webkit-text-stroke:0.18vw black ;
+    border-right:3px solid white ;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0%;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+#team_name {
+    /* display: flex; */
+    font-size: 30px;
+    /* margin: 20px 20px; */
+    padding: 12px 12px ;
+    text-align: center;
+    align-items: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+}
+
+#head2 {
+    /* display: flex; */
+    font-size: 25px;
+    /* margin: 20px 20px; */
+    padding: 12px 12px ;
+    text-align: center;
+    align-items: center;
+    /* font-family: system-ui; */
+    color: white;
+}
+
+#bottom {
+    display: block;
+    margin: 30px 30px;
+    padding: 10px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.box{
+    margin: 20px 20px;
+    padding: 12px 12px;
+}
+
+#images {
+    height: 150px;
+    width: 150px;
+    margin: 2px 2px;
+    padding: 7px 7px;
+}
+#images2 {
+    height: 150px;
+    width: 150px;
+    margin: 2px 2px;
+    padding: 7px 7px;
+}
+
+#images:hover {
+    transform: scale(2, 2);
+    transition: 0.5s transform;
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
